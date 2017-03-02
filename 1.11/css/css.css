@@ -1,0 +1,175 @@
+header {
+	width: 100%;
+	background-color: #91d4da;
+	height: 53px;
+	line-height: 53px;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+header a {
+	position: absolute;
+	left: 16px;
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: 600;
+	display: inline-block;
+	vertical-align: top;
+}
+header a img {
+	width: 13px;
+	height: 24px;
+	margin-top: 14px;
+	margin-right: 7px;
+	vertical-align: top;
+}
+header h2 {
+	display: inline-block;
+	margin: 0;
+}
+nav {
+	font-size: 0;
+}
+nav ul {
+	display: flex;
+	padding: 0; 
+}
+nav ul li {
+	list-style: none;
+	font-size: 19px;
+	font-weight: bold;
+	flex-grow: 1;
+	height: 58px;
+	line-height: 58px;
+	text-align: center;
+	position: relative;
+	color: #626262;
+}
+nav ul li:hover:after {
+	content: " ";
+	width: 100%;
+	height: 4px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #91d4da;
+}
+nav ul li.select:after {
+	content: " ";
+	width: 100%;
+	height: 4px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #91d4da;
+}
+.banner {
+	width: 100%;
+	height: 100%;
+}
+.banner img {
+	width: 100%;
+}
+
+/* 标签区*/
+.tag {
+	display: flex;
+	margin: 22px 0 27px;
+}
+.tag div {
+	flex-grow: 1;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	padding: 0 14px;
+	text-align: center;
+}
+.tag div a {
+	display: block;
+	cursor: pointer;
+	font-weight: 600;
+	color: #313131;
+}
+.tag div img {
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+/*分栏标题*/
+
+.sometitles {
+	
+	width: 90%;
+	margin: 0 5%;
+	border-top: 2px solid #dedede;
+	padding: 20px 0;
+}
+.sometitles > div {
+	display: inline-block;
+	width: 25%;	
+	padding: 0 2%;	
+	text-align: center;
+	border-right: 2px solid #eee;
+}
+.sometitles .title3 {
+	border-right: 0;
+}
+.sometitles .title3 a {
+	padding-bottom: 20%;
+}
+.sometitles a {
+	display: block;
+ 
+}
+
+.sometitles div img {
+ 	width: 80%;
+}
+.sometitles div img:nth-child(3) {
+	width: 100%;
+}
+.sometitles div h3 {
+	font-size: 22px;
+	margin: 0;
+}
+.sometitles div h4 {
+	color: #595959;
+	margin: 15px 0;
+}
+/* 分割线 */
+.module1 {
+	width: 100%;
+	border-top: 17px solid #f5f5f5;
+ 
+}
+.module1 .content-wrapper {
+	width: 90%;
+	text-align: center;
+	margin-left: 5%;
+}
+.content-wrapper .content {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.content-wrapper h3 {
+	text-align: left;
+	border-bottom: 2px solid #eee;
+	line-height: 50px;
+}
+.content-wrapper .content span {
+	flex-grow: 1;
+	display: inline-block;
+}
+.content-wrapper img {
+	width: 100%;
+}
+.content ul {
+	float: right;
+	flex-grow: 2;
+}
+.content ul li {
+	float: left;
+	width: 50%;
+	min-width: 150px;
+	text-align: center;
+}

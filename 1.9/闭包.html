@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		/*for (var i = 0; i <= 5; i++) {
+			(function j(){
+				var j =i;
+				setTimeout(function ad(){
+					console.log(j);
+					alert(2);
+				}, j*1000);
+
+			})(i);		
+		}	
+
+		for ( let i = 0; i <= 5; i++) {	
+			 
+				setTimeout(function ad(){
+					console.log(i);
+					 
+				}, i*1000);
+			 		
+		}
+		function bar() {
+
+			console.log("bar");
+			baz();
+		}
+		function baz() {
+			debugger;
+			console.log("baz");
+			bao();
+		}
+		function bao() {
+
+			console.log("bao");
+		}
+		bar();
+		*/
+		//1.
+		function foo() {
+			console.log(this.a);
+		}
+		function doFoo(fun) {
+			fun();
+		}
+		var obj = {
+			a: 2,
+			foo: foo
+		};
+		var a = "global world";
+		obj.foo();
+		doFoo(obj.foo);
+		//2.--
+		function bar(something){
+			console.log(this.a , something);
+			return this.a + something;
+		}
+		var ar = function() {
+			return bar.apply(obj, arguments);//执行bar函数时强行将this指向obj
+		}
+		var b = ar( 4 );
+		console.log(b);
+		//3.绑定函数 与es5的bind方法
+		function bind (fun, obj) {
+			return function () {
+				return fun.apply(obj, arguments);
+			}
+		}
+		fun.bind(obj);//功能相同
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

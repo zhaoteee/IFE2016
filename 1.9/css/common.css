@@ -1,0 +1,40 @@
+.fr {
+	float:right;
+}
+.fl {
+	float:left;
+}
+.clearfix:after {
+	content:"";
+	height:0;
+	display:block;
+	clear:both;
+	line-height:0;
+	visibility:hidden;
+}
+.clearfix {
+	zoom:1;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+.active {
+		color:#fff;
+}
+.current {
+	color:#75a0c6;
+}
+.hide{
+	display:none;
+}
+
+.hideChild .file,
+.hideChild .file-cont {
+	display:none;
+}
+
+ 

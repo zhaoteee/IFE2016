@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>contextmenu</title>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: #ff0;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		/* 基本功能	*/
+		window.onload =changeMeun;
+		function changeMeun() {
+			
+			window.oncontextmenu = function con(event) {
+				var selfm = document.getElementById('selfmenu');
+				if(!selfm) {
+					var odiv = document.createElement('div');
+					odiv.setAttribute('id', 'selfmenu')
+					odiv.style.top = event.clientY + "px";
+					odiv.style.left = event.clientX + "px";
+					document.body.appendChild(odiv);
+				}else {
+					document.body.removeChild(selfm);
+				}
+
+				
+				return false;
+			}
+			document. onclick =function remove() {		
+					var selfm = document.getElementById('selfmenu');
+					if ( selfm ) {
+						document.body.removeChild(selfm);
+					}
+			}
+		}
+	</script>
+</body>
+</html>

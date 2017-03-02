@@ -1,0 +1,858 @@
+	/*
+		头部区域布局start
+	*/
+
+	.header {
+		height:56px;
+		 width:100%;
+		min-width:980px;
+		background:#2189bf;
+		overflow:hidden;
+	}
+	.hd-logo {
+		padding:10px 0 0 50px;;
+		width:36px;
+		height:36px;
+	}
+	.hd-search {
+		margin-right:94px;
+		position:relative;
+	}
+	.search-box {
+		width:312px;
+		height:22px;
+		margin-top:14px; 
+		padding:2px 0;
+		border:1px solid #82dcdb;	
+		background:#fff;
+
+		-moz-borderradius: 12px;
+		-o-borderradius: 12px;
+		-webkit-borderradius: 12px;
+		border-radius:12px;
+	}
+	.search-box span {
+		display:inline-block;
+		width:17px;
+		height:17px;
+		margin-left:16px;
+		margin-top:4px;
+		float:left;
+		background:url('../images/search.png') no-repeat;
+	}
+	.search-box input[type="text"] {
+		border:none;
+		width:240px;
+		line-height:20px;
+		text-indent:.5em;
+	}
+	.search-box input[type="text"]:focus {
+		outline:none;
+	}
+	.login {
+		position:absolute;
+		right:-64px;
+		top:20px;
+		padding:4px 0 0 38px;	 
+		font-family:"SimHei";
+		font-size:12px;
+		color:#fff;
+		font-weight:bold;
+		background:url('../images/login.png') 20px center no-repeat;
+	}
+
+	/*
+		头部区域布局结束
+		*********************
+		左侧边栏，面包屑区布局开始
+	*/
+	.left-aside {
+		width:260px;
+		background:#2a2e3d;
+		height: 100%;
+	}
+	.user-info{
+ 
+		padding:26px 87px 24px 45px;
+		vertical-align:center;
+		
+	}
+ 
+	.user-pic {
+		width:47px;
+		height:47px;
+		padding:3px;
+		display:inline-block;	
+		border:2px solid #fff;
+		position:relative;
+
+		-moz-borderradius: 28px;
+		-o-borderradius: 28px;
+		-webkit-borderradius: 28px;
+		border-radius:28px;
+	}
+	.user-pic img {
+		position:absolute;
+		top:3px;
+		left:3px;
+	}
+	.name {
+		float:right;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size:16px;
+		overflow:hidden;
+		font-family:'SimHei';
+		color:#fff;
+		font-weight:bold;
+	}
+	.store-fans {
+		margin-top:25px;
+		color:#6e8095;
+		font-weight:bold;
+	}
+	.store-fans a {
+		text-decoration:none;
+		font-family:'SimHei';
+		font-size:14px;
+	}
+	.store-val,.fans-val {
+		color:#6e8095;
+		font-style:normal;
+	}
+	.store-fans span {
+		font-family:'宋体';
+		font-size:14px;
+		display:block;
+	}
+	.store,.fans {
+		margin:0;
+		 
+	}
+	.line {
+		margin-left:30px;
+		width:2px;
+		height:34px;
+		background:#313545;
+		text-indent:-99999px;
+	}
+	.user-details {
+		font-size:12px;
+		font-family:'SimHei';
+		color:#6e8095;
+		padding-left:45px;
+		padding-bottom: 500px;
+		margin-top:14px;
+	}
+	.user-details p {
+		margin:0;
+		padding-left:6px;
+		position:relative;
+		cursor:pointer;
+	}
+	.user-details i,
+	.file s,
+	.file em {
+		width:12px;
+		height:12px;
+		margin-right:12px;
+		position:absolute;
+		top:0;
+		left:-18px;
+		overflow:hidden;
+		background:url('../images/asidespirit.png');
+	}
+	.self-form i {
+		background-position:0 100px;
+	}
+	.self-store i,
+	.self-pic i,
+	.self-groth i {
+		background-position:0 88px;
+	}
+	.self-share i {
+		background-position:0 78px;
+	}
+	.account-info i {
+		background-position:0 66px;
+	}
+	.self-form,
+	.self-store,
+	.self-share,
+	.self-pic,
+	.self-groth,
+	.account-info {
+		padding-bottom:36px;
+	} 
+	
+	.file {
+		padding-top:19px;
+	}
+	.file p {
+	 
+		padding-left:32px;
+	}
+	.file i {
+		left:15px;
+		background-position:0 54px;
+	}
+	.file s {
+		left:-2px;
+		background-position:0 42px;
+	}
+	.active span s {
+		background-position:0 12px;
+	}
+	.active span i {
+		background-position:0 27px;
+	}
+	.file-cont .content {
+		padding-left:48px;
+		padding-top:18px;
+	}
+	.content em {
+		left:32px;
+		top:18px;
+		background-position:0 113px;
+	}
+	.active em 
+	{
+		background-position:0 128px;
+		
+	}
+
+
+	/* 右侧内容区样式 */
+	.container{
+		min-width:1028px;
+
+		margin-left: 260px;
+		margin-right: 0;
+		background: #eeeded;
+
+	}
+		/* 顶部历史区样式 */
+	.history-list {
+		padding:9px 0 9px 30px;
+		height:30px;
+		line-height:12px;
+		font-size:  12px;
+		font-family: 'SimHei';
+		color: #aaa;
+		background: #fff;
+	}
+	.history-list li{
+		margin-right: 12px;
+	}
+	.history-list a{
+		text-decoration: none;
+		color: #aaa;
+	}
+ 
+	.hist-self{
+		padding: 0 7px;	
+	}
+	.hist-file{
+		padding: 0 4px 0 6px;	
+	}
+	.hist-docum{
+		padding: 0 3px;	
+	}
+	/* 选择区样式 */
+
+	.select-area {
+		width: 888px;
+		height: 56px;
+		margin: 20px 0 20px 60px;
+		padding:15px 0 15px 44px;
+		border: 1px solid #dcdee0;
+		background: #fff;
+		font-size: 0;
+	}
+	.select-area > div {
+	  box-sizing: border-box;
+	  display: inline-block;
+	  
+	}
+	 
+	.select-com span {
+		color: #b7b7b7;
+		padding-right: 15px;
+		font-size: 16px;
+	}
+	.search-item {
+		margin-top: -68px; 
+		height: 25px;
+		line-height: 25px;
+		vertical-align: middle;
+	}
+	.search-item button,
+	.buy-in button,
+	.buy-out button,
+	.detail-info button {
+		height: 23px;
+		line-height: 23px;
+		background: #fff;
+		position: relative;
+		color: #5c5d5d;
+		position: relative;
+		font-size: 12px;
+		border: 1px solid #ddd;
+		text-align: left;
+	}
+
+	.search-item button {
+			
+		padding: 1px 22px 1px 10px;	
+	}
+	.triangle {
+		position: absolute;
+		right: 8px;
+		top: 8px;
+		width: 10px;
+		height: 7px;
+		overflow: hidden;
+	}
+	.triangle s {
+		position: absolute;
+		font-style: normal;
+		text-decoration: none;
+		top: -11px;
+		left: -1px;
+		font-size: 12px;
+		font-weight: 600;
+	}
+	.selectBlue {
+		color: #5690c8;
+	}
+	.in-out {
+		margin-left: 38px;
+		margin-right: 32px;
+		padding-right: 28px;
+		display: inline-block;
+		position: relative;
+	}
+	.buy-in {
+		margin-bottom: 5px;
+		display: inline-block;
+	}
+	.buy-in button,
+	.buy-out button {
+		width: 126px;			 
+		text-align: left; 
+	}
+	.change {
+		width: 23px;
+		height: 50px;
+		font-size: 12px;
+		position: absolute;
+		right: 0;
+		top: 4px;
+		padding-left: 6px;
+		padding-top: 12px;
+		text-align: center;
+		color: #e0e0e0;
+		background:url(../images/change.png) no-repeat;
+	}
+	.detail-info {
+			line-height: 25px;
+	}
+	
+	.detail-info .data ,
+	.detail-info .success{
+		 width: 117px;
+	}
+	.detail-info .used-hours,
+	.detail-info .persons {
+		width: 68px;
+	}
+	.detail-info .data ,
+	.detail-info .persons {
+		margin-right: 14px;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	.search {
+		font-size: 12px;
+		padding: 7px 14px;
+		background: #388ac1;
+		color: #fff;
+		font-weight: 600;
+		text-decoration: none;
+		margin-left: 30px;
+		position: relative;
+		bottom: 20px;
+	}
+
+	.money-history ul {
+		margin-left: 60px;
+ 	 	height: 65px;
+	}
+	.money-history li{
+		float: left;
+		border-left: 1px solid #cacdd1; 
+		border-top: 1px solid #cacdd1; 
+		background-color: #fff;
+		text-align: center;
+		margin-right: 6px;
+	}
+	.money-history .money-list {
+		width: 110px;
+		height: 64px;
+		position: relative;
+	}
+	.money-history .money-list:hover:before {
+		content: '';
+		width: 110px;
+		height: 4px;
+		position: absolute;
+		left: 0;
+		background-color: #4388c8;
+		display: inline-block;
+	}
+	.money-list p {
+		margin: 0;
+		line-height: 30px;
+	}
+	.money-list .time {
+		margin-bottom: 0;
+	}
+	.money-list p s {
+		color: #ec6500;
+		font-size: 24px;
+		font-weight: 700;
+		text-decoration: none;
+	}
+	.money-list span {
+		color: #323333;
+	}
+	.money-history .left,
+	.money-history .right {	 
+		width: 29px;
+		height: 63px;
+		cursor: pointer;	
+	}
+	.money-history .left:hover,
+	.money-history .right:hover {
+		background-color: #eee;
+	}
+	.money-history .left {
+		background: url(../images/left.png) no-repeat 10px 28px #fff;
+	}
+	.money-history .right {
+		background: url(../images/right.png) no-repeat 10px 28px #fff;
+	}
+	.money-history .last {
+		line-height: 65px;
+		color: #636363;
+		padding:0 26px 0 67px;
+		background: url(../images/calendar.png) no-repeat 20px 17px #fff;
+	}
+
+	/*  月份统计*/
+	.month-totle h3 {
+		margin: 22px 0 6px 60px;
+		width: 500px;
+	}
+	.month-totle .items {
+		overflow: hidden;
+		margin-left: 60px;
+		
+	}
+	.month-totle .items .item {
+		float: left;
+		width: 181px;
+		height: 50px;
+		margin-right: 31px;
+		background-color: #fff;
+		border: 1px solid #d3d4d8;
+		padding: 10px 10px 10px 14px;
+	}
+	.month-totle .items .item:last-child {
+		margin-right: 0;
+	}
+	.month-totle .items .item p {
+		margin-top: 0;
+		float: left; 
+	}
+	 
+	 .items .item p span {
+		font-size: 12px;
+		color: #424242;
+		line-height: 24px;
+	} 
+	.items .item p s{
+		font-size: 10px;
+		line-height: 24px;
+		color: #b7b7b7;
+		text-decoration: none;
+	}
+	.items .item i {
+		width: 60px;
+		height: 46px;
+		float: right;
+	}
+	.items .item:nth-child(1) {
+		border-left: 4px solid #43b29d;
+	}
+	.items .item:nth-child(2) {
+		border-left: 4px solid #388ac1;
+	}
+	.items .item:nth-child(3) {
+		border-left: 4px solid #d96d5c;
+	}
+	.items .item:nth-child(4) {
+		border-left: 4px solid #e2cd46;
+	}
+	.items .item:nth-child(1) i {
+		background-color: #43b29d;
+	}
+	.items .item:nth-child(2) i {
+		background-color: #388ac1;
+	}
+	.items .item:nth-child(3) i {
+		background-color: #d96d5c;
+	}
+	.items .item:nth-child(4) i {
+		background-color: #e2cd46;
+	}
+
+	/*  第一组项目*/
+	.project-detail {
+		overflow: hidden;
+		margin-top: 12px;
+	}
+	.project-detail > div{
+		
+		border-radius: 4px;
+	}
+	.project-detail .first-team {		
+		margin: 0;
+		height: 38px;
+		line-height: 38px;
+		font-family: 'SimHei';
+		font-size: 12px;
+		padding-left: 20px;
+		border-bottom: 1px solid #e7e8eb; 
+		background-color: #f4f5f6;
+	}
+	.first-project {
+		margin-left: 60px;
+		border: 1px solid #ced1d4;
+		background-color: #fff;
+	}
+	.first-project .pro {		
+		margin: 12px 20px 0;
+		padding: 0 48px 0 0;	
+		border-radius: 4px;
+		background-color: #fff;
+	}
+	.first-project ul li {
+		display: inline-block;
+		float: left;
+		margin-right: 8px; 
+		width: 84px;
+		height: 28px;
+		line-height: 28px;
+		font-size: 12px;
+		text-align: center;
+		background-color: #ededf0;	
+		border-radius: 4px 4px 0 0; 
+		position: relative;
+		cursor: pointer;
+		font-family: 'microsoft Yahei';
+	}
+	.first-project ul li.select {		 
+		border-top: 1px solid #cbcbcc;
+		border-left: 1px solid #cbcbcc;
+		border-right: 1px solid #cbcbcc;
+		background-color: #fff;
+	}
+ 	.first-project ul li.select i {
+ 		position: absolute;
+ 		width: 84px;
+ 		height: 2px;
+ 		bottom: -1px;
+ 		left: 0;
+ 		background-color: #fff;
+ 	}
+	.material {
+		margin: 0 20px 24px;
+		border: 1px solid #cbcbcc;
+		padding: 28px 50px 35px 36px;
+		font-size: 12px;
+		font-family: 'SimSong'
+	}
+	.material table{
+		border: 1px solid #cbcbcc;
+		color: #8d8d8d;
+	}
+	.material table td {
+		border: 1px solid #cbcbcc;
+		padding: 0 24px 0 16px;
+		height: 28px;
+		text-align: center;
+	}
+	.about-project {
+		margin-left: 8px;
+		border: 1px solid #cbcbcc;
+		background-color: #fff;
+	}
+	.charge {
+		margin-left: 34px;
+		padding-top: 17px;
+		font-size: 14px; 
+	}
+	.charge span {
+		color: #6b6b6b;
+	}
+	.charge h4 {
+		margin: 0 35px 0 0;
+		padding: 8px 35px 12px 0;
+		border-bottom: 1px solid #cbcbcc;
+		color: #262626;
+	}
+	.price-change {
+		border-bottom: 1px solid #cdcdcc;
+	}
+	.price-change p {
+		float: left;
+		line-height: 20px;
+	}
+	.price-change p:first-child {
+		margin-right: 50px;
+		padding-left: 10px;
+	}
+	.price-change p:nth-child(2) {
+		border-left: 1px solid #cdcdcc;
+		padding: 14px 0 14px 10px;
+		margin: 0;
+	}
+	.price-change p i {
+		font-style: normal;
+	}
+	.details-pro {
+		height: 111px;
+	}
+	.details-pro p {
+		line-height: 20px;
+		margin: 0;
+		padding-left: 10px;
+		color: #262626;
+	}
+	.form {
+		height: 25px;
+		line-height: 25px;
+		vertical-align: middle;
+		padding-top: 6px;
+		padding-bottom: 30px;
+		border-top: 1px solid #cdcdcc;
+	}
+	.form input {
+		width: 14px;
+		height: 14px;
+	}
+	.form button {
+		margin-left: 115px;
+		width: 50px;
+		height: 25px;
+		border: none;
+		background-color: #388bc2;
+		margin-right: 35px;
+		color: #fff;
+		font-family: 'SimHei';
+	}
+	.form span {
+		font-size: 12px;
+	}
+
+	/* 日历与汽车排行区样式 */
+	.calendar-car {
+		margin-left: 60px;
+		margin-top: 8px;
+		font-family: 'SimHei';
+	}
+	.calendar,
+	.car {
+		border: 1px solid #cbced1;
+		border-radius: 4px;
+	}
+	.calendar > p,
+	.car > p {
+		height: 40px;
+		line-height: 40px;
+		padding-left: 20px;
+		margin: 0;
+		border-bottom: 1px solid #e7e9eb;
+	 	background-color: #f4f5f6;
+	 	font-family: 'microsoft Yahei'
+	}
+	.everymoth {
+		padding: 10px 20px 26px;
+		color: #535353;
+		background-color: #fff;
+	}
+	.everymoth .select-time {
+		padding-bottom: 10px;
+		border-bottom: 1px solid #d9eaf6;
+		font-family: 'SimHei';
+
+	}
+	.everymoth .select-time li {
+		float: left;
+		border: 1px solid #cdcecf;
+		line-height: 20px;
+		background-color: #fff;
+		text-align: center;
+		font-size: 12px;
+		margin-right: 12px;
+	}
+	.everymoth .select-time li:nth-child(1) {
+		padding-left: 10px;
+	}
+	.everymoth .select-time li:nth-child(2) {
+		width: 84px;
+	}
+	.everymoth .select-time li:nth-child(3) {
+		padding-left: 10px;
+	}
+	.everymoth .select-time li:nth-child(4) {
+		padding: 0 10px;
+		margin-right: 0;
+	}
+	.everymoth .select-time li:nth-child(2) i {
+		float: right;
+	}
+	.everymoth .select-time li i {
+		display: inline-block;
+		width: 18px;
+		height: 20px;
+		color: #c2c3c3;
+		font-style: normal;
+		font-size: 10px;
+		border-left: 1px solid #f5f6f7;
+	}
+	.everymoth .week {		
+		height: 30px;
+		line-height: 30px;
+		border-top: 1px solid #a9cfec;
+		border-bottom: 1px solid #cdcecf;
+		color: #636363;
+		font-family: 'SimHei';
+		font-size: 12px;
+	}
+	.everymoth .week li {
+		float: left;
+		padding: 0 18px;
+		
+	}
+	.everymoth .day {
+		overflow: hidden;
+	 	width: 320px;
+		margin-top: 6px;
+	 	font-family: 'SimHei';
+	 	font-size: 12px;
+	 	padding: 0 10px; 
+	}
+	.everymoth .day li {
+		float: left;
+		width: 39px;
+		height: 25px;	
+		margin: 2px;	
+		text-align: center; 
+		cursor: pointer;
+		border: 1px solid #fff;
+		vertical-align: middle; 
+		padding: 7px 0;
+	}
+	.day li:hover {
+		border-color: #f4c11c;
+	}
+	.day li.nextmonth,
+	.day li.lastmonth {
+		visibility: hidden;
+	}
+	.day li.yellow {
+		border: 1px solid #f4c11c;
+	}
+	.day li p {
+		margin: 0;
+		word-spacing: 0;
+	}
+	.day li p.jieri {
+		color: red;
+	}
+
+	/* q汽车排行榜 */
+	.car {
+		background-color: #fff;
+		margin-left: 8px;
+	}
+	.car #cartable {
+		border-collapse: collapse;
+		border: none;
+		margin: 22px 32px;
+		font-family: 'SimHei';
+	}
+	.car #cartable th {
+		color: #231815;
+		font-size: 13px;
+	}
+	.car #cartable tr {
+		font-size: 12px;
+	}
+	.car #cartable tr:hover {
+		background-color: #f4f6f7;
+		cursor: pointer;
+	}
+	.car #cartable td {
+		color: #494949;
+	}
+	.car #cartable th,
+	.car #cartable td {
+		border: 1px solid #999;
+		padding: 0 30px;
+		line-height: 25px;
+		text-align: center;
+	}
+	#cartable td i {
+		display: inline-block;
+		width: 168px;
+		height: 4px;
+		background-color: #eee;
+		margin-left: 22px;
+		margin-bottom: 4px;
+		position: relative;
+	}
+	#cartable td i s {
+		height: 3px;
+		position: absolute;
+		left: 0;
+	}
+	#cartable td i s.no1 {
+		background-color: #ec6d51;
+		width: 80%;
+		border-top: 1px solid #ef907b;
+	}
+	#cartable td i s.no2 {
+		background-color: #ef8050;
+		width: 75%;
+		border-top: 1px solid #f3a17c;
+	}
+	#cartable td i s.no3 {
+		background-color: #f19e4f;
+		width: 60%;
+		border-top: 1px solid #f5b67b;
+	}
+	#cartable td i s.no4, 
+	#cartable td i s.no5, 
+	#cartable td i s.no6, 
+	#cartable td i s.no7,
+	#cartable td i s.no8, 
+	#cartable td i s.no9, 
+	#cartable td i s.no10 {
+		background-color: #f19e4f;
+		width: 40%;
+		border-top: 1px solid #f5b67b;
+	}
