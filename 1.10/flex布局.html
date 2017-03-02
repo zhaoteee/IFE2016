@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex布局</title>
+	<style type="text/css">
+		 .wrapper {
+		 	/*
+				定义flex容器
+				项目排序方向
+				禁止换行
+				两端对齐，项目间等距
+				竖直方向交叉轴中间对齐
+		 	*/
+			display: flex;
+			display: -ms-flexbox;
+			flex-direction: row;
+			flex-wrap: nowrap;						 
+			justify-content: space-between;			 
+			align-items: center;	 
+		}
+		@media screen and (max-width: 640px) {
+			/*
+				当屏幕小于等于640px时
+				竖直方向交叉轴起点对齐
+				允许换行
+				设置.box4的排列顺序为-1，排在最前面
+			*/
+			.wrapper {
+				align-items: flex-start;
+				flex-wrap: wrap;
+				
+			}
+
+			.box4 {
+				order: -1
+			}
+		}
+		.box1,
+		.box2,
+		.box3,
+		.box4 {
+			width: 108px;
+			border: 1px solid #f00;
+			padding: 20px;	
+		}
+		.box1 {
+			height: 120px;
+		}	
+		.box2 {
+			height: 80px;
+		}	
+		.box3 {
+			height: 40px;
+		}	
+		.box4 {
+			height: 200px;
+			border-color: #0f0;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">	 
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+	</div>
+</body>
+</html>
