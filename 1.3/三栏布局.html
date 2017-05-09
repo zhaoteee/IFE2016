@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>三栏布局</title>
+  <style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	.clear:after{
+		content:".";
+		line-height:0;
+		font-size:0;
+		display:block;
+		clear:both;
+	}
+	.clear{
+		*zoom:1;
+	}
+    .contener{
+		margin:20px auto;
+		min-width:600px;
+		/*	
+			width:1200px;
+			width-直接确定宽度在缩放浏览器窗口大小时，中间栏没有自适应的响应，直接遮盖。
+			两种方法在chrome浏览器下，模拟手机显示的结果基本一致。
+		*/
+		background:#eee;
+		padding:20px;
+		border:1px solid black;
+		overflow:hidden;
+		
+	}
+	.left,.right,.center{
+		background:#fff;
+		padding:20px;
+		border:1px solid red;
+	}
+	.left{		
+		float:left;
+		width:160px;
+	}
+	.left h3{
+		position:relative;
+		top:-80px;
+		left:90px;
+	}
+	.center{
+		margin:0 140px 0 220px;	
+	}
+	.right{
+		float:right;
+	}
+	.right img{
+		display:block;
+		margin-bottom:20px;
+	}
+  </style>
+ </head>
+ <body>
+  <div class="contener clear">
+	<div class="left"><img src="images/logo.jpg" /><h3>wo在战斗！</h3></div>
+	<div class="right">
+		<img src="images/logo.jpg" />
+		<img src="images/logo.jpg" />
+		<img src="images/logo.jpg" />
+		<img src="images/logo.jpg" />
+	</div>
+	<div class="center">
+		<h4>关于</h4>
+		<p>这是一个团队，队员之间团结互助，和谐相处，共创佳绩，努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力努力</p>
+		</div>
+	
+  </div>
+ </body>
+</html>
